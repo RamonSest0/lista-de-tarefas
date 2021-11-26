@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="title">To Do List</h1>
+            <div class="line"></div>
+        </header>
+
+        <section>
+            <button id="add-task" onclick="openAddTask()">Add Taks</button>
+        </section>
+
+        <section id="submit-task-display">
+            <input type="text" id="task-content" placeholder="Digite a tarefa">
+            <div>
+                <button class="btn" onclick="btnCancel()">cancel</button>
+                <button class="btn" onclick="submitTask()">save</button>
+            </div>
+
+        </section>
+
+        <section id="task-list">
+
+        </section>
+        <footer class="footer">
+             <a href="https://github.com/RamonSest0" target="_blank"><p id="github">/RamonSest0</p></a>
+        </footer>
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

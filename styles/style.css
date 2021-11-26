@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: linear .2s;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background: rgb(3,188,224);
+    background: linear-gradient(90deg, rgba(3,188,224,1) 0%, rgba(27,27,255,1) 59%, rgba(23,11,233,1) 100%);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.title {
+    color: white;
+}
+
+.line {
+    height: 2px;
+    width: 500px;
+    background-color: rgba(0, 0, 139, 0.486);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#add-task {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 60px;
+    border:none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+}
+
+#add-task:hover {
+    color: rgb(83, 83, 83);
+}
+
+#submit-task-display {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+#task-content {
+    border: none;
+    width: 280px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: rgb(85, 85, 85);
+    
+}
+
+#task-content::placeholder {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+#task-content:focus {
+    outline: none;
+}
+
+.btn {
+    border:none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+}
+
+.btn:hover {
+    color: rgb(83, 83, 83);
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+#task {
+    width: 400px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-left: 3px solid darkblue;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-left: 7px;
+
+    display: flex;
+    align-items: center;
+}
+
+.task-text {
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#btn-remove {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-remove:hover {
+    color: rgb(136, 136, 136);
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+#github {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#github:link {
+    color: white;
+}
+
+#github:hover {
+    color: rgb(136, 136, 136);
+}
+
+#github::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../image/github-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
