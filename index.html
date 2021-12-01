@@ -10,36 +10,51 @@
 </head>
 
 <body>
-
+    <!-- container - start -->
     <div class="container">
+
+        <!-- header - start -->
         <header>
             <h1 class="title">To Do List</h1>
             <div class="line"></div>
         </header>
+        <!-- header - end -->
 
+        <!-- Button to open the create task display - start -->
         <section>
             <button id="add-task" onclick="openAddTask()">Add Taks</button>
         </section>
+        <!-- Button to open the create task display - end -->
 
+        <!-- Display to create a task - start -->
         <section id="submit-task-display">
-            <input type="text" id="task-content" placeholder="Digite a tarefa">
+            <input type="text" id="task-content" placeholder="What are you working on?">
             <div>
                 <button class="btn" onclick="btnCancel()">cancel</button>
                 <button class="btn" onclick="submitTask()">save</button>
             </div>
-
         </section>
+        <!-- Display to create a task - end -->
 
+        <!-- Tasks container - start -->
         <section id="task-list">
 
         </section>
-        <footer class="footer">
-             <a href="https://github.com/RamonSest0" target="_blank"><p id="github">/RamonSest0</p></a>
-        </footer>
-    </div>
+        <!-- Tasks container - end -->
 
+        <!-- footer - start -->
+        <footer class="footer">
+            <a href="https://github.com/RamonSest0" target="_blank">
+                <p id="github">/RamonSest0</p>
+            </a>
+        </footer>
+        <!-- footer - end-->
+
+    </div>
+    <!-- container - end -->
 
     <script src="scripts/script.js"></script>
+
 </body>
 
 </html>
