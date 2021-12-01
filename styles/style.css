@@ -10,16 +10,13 @@
     list-style: none;
 }
 
-body {
-    
+body { 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     height: 100vh;
     background: rgb(3,188,224);
     background: linear-gradient(90deg, rgba(3,188,224,1) 0%, rgba(27,27,255,1) 59%, rgba(23,11,233,1) 100%);
 }
-
 
 .container {
     display: flex;
@@ -68,8 +65,7 @@ body {
     height: 150px;
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
 }
 
 #task-content {
@@ -78,13 +74,13 @@ body {
     height: 40px;
     font-weight: bolder;
     font-size: 1.3rem;
-    color: rgb(85, 85, 85);
-    
+    color: rgb(85, 85, 85);   
 }
 
 #task-content::placeholder {
     font-weight: bolder;
     font-size: 1.3rem;
+
 }
 #task-content:focus {
     outline: none;
@@ -120,7 +116,6 @@ body {
     font-size: 1.2rem;
     font-weight: bolder;
     padding-left: 7px;
-
     display: flex;
     align-items: center;
 }
